@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyek1</title>
+    <link rel="stylesheet" href="proyek/proyek1.css">
+    
+    
+</head>
+
+<body style="
+  background: url('background1.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  height: 100vh;">
+
+<h1 style="text-align: center;"><u>Proyek 1</h1></u>
+<img src="gambar.png" alt="picture" width="50%" height="50%" 
+style="position: absolute; top: 40%; left: 47%; bottom: 50%;transform: translate(-50%, -40%);">
+
+<div class="sidebar">
+  <h2 style="color: #000000;">Sidebar</h2>
+  <ul>
+    <li class="flicker-text"><a href="profil.html">Profil</a></li>
+    <li class="flicker-text"><a href="perkenalan.html">Introduction</a></li>
+    <li class="flicker-text"><a href="about me.html">About Me</a></li>
+    <li class="flicker-text"><a href="education.html">Education</a></li>
+  </ul>
+
+  <h2 style="color: black;">Kumpulan Karya</h2>
+  <ul>
+    <li class="flicker-text">E-Commerce Website</li>
+    <li class="flicker-text">Portofolio</li>
+    <li class="flicker-text">Kalkulator Online</li>
+    <li class="flicker-text">Game Sederhana</li>
+    <li class="flicker-text">Formulir Pendaftaran Online</li>
+  </ul>
+
+  <h2 style="color: #000000;">Full Name</h2>
+  <ul>
+    <li class="flicker-text">Dicky Aldian Pratama</li>
+  </ul>
+
+  <h2 style="color: #000000;">Personal Experience</h2>
+  <ul>
+    <li class="flicker-text">Web Developer</li>
+    <li class="flicker-text">Ciber Security</li>
+    <li class="flicker-text">Network Engineer</li>
+  </ul>
+
+  <div class="upgrade">
+    🔄 Upgrade Yourself<br>
+    never give up on something interesting🔥
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.instagram.com/pratamadickyaldian" target="_blank">
+      <img src="instagram.png" alt="Instagram">
+    </a>
+
+    <a href="https://www.facebook.com/dedek lestari" target="_blank">
+      <img src="facebook.png" alt="Facebook">
+    </a>
+    
+    <a href="https://www.twitter.com/@dickyaldia98896" target="_blank">
+      <img src="twit.png" alt="Twitter">
+    </a>
+    
+    <a href="https://www.youtube.com/dickyaldianpratama" target="_blank">
+      <img src="youtube.png" alt="YouTube">
+    </a>
+    
+    <a href="https://www.linkedin.com/" target="_blank">
+      <img src="linkedin.png" alt="LinkedIn">
+    </a>
+    
+  </div>
+</div>
+
+<div class="popup-iklan" id="popupIklan">
+  <button class="close-btn" onclick="tutupIklan()">X</button>
+  <h4 style="color: rgb(210, 226, 240);">Promo Spesial!</h4>
+  <p style="color: azure; text-align: left; margin-left: 10px;">Dapatkan diskon 50% untuk pembelian hari ini !!</p>
+  <img src="iklan.jpeg" alt="Iklan">
+</div>
+
+<script>
+  // Tampilkan popup setelah halaman dimuat
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.getElementById('popupIklan').classList.add('show');
+    }, 1000); // delay 1 detik
+  });
+
+  function tutupIklan() {
+    const popup = document.getElementById('popupIklan');
+    popup.classList.remove('show');
+  }
+</script>
+
+<button onclick="window.location.href='diki.html'" 
+  style="
+    background-color: #4CAF50; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    padding: 15px 20px; 
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-weight: bold;">
+  ← KEMBALI
+</button>
+
+
+
+
+
+<div class="popup-iklan-baru" id="popupIklanBaru">
+  <button class="close-btn" onclick="tutupIklanBaru()">×</button>
+  <img src="iklan2.png" alt="Iklan Promo">
+</div>
+
+
+
+
+
+
+<script>
+
+  let counterBaru = 0;
+  let maxTampilan = 3;
+
+  function tampilkanIklanBaru() {
+    if (counterBaru < maxTampilan) {
+      const popup = document.getElementById('popupIklanBaru');
+      popup.classList.add('show');
+      popup.style.bottom = '40px'; // Pastikan muncul dengan benar
+    }
+  }
+
+  function tutupIklanBaru() {
+    const popup = document.getElementById("popupIklanBaru");
+    popup.classList.remove("show");
+    popup.style.bottom = "-100vh"; // Sembunyikan sepenuhnya
+
+    counterBaru++; // Tambah counter setelah di-close
+
+    if (counterBaru < maxTampilan) {
+      setTimeout(function () {
+        tampilkanIklanBaru();
+      }, 2000); // Tampil lagi setelah 2 detik
+    }
+  }
+
+  window.addEventListener('load', function () {
+    setTimeout(tampilkanIklanBaru, 2000); // Tampilkan pertama kali
+  });
+  </script>
+
+
+
+
+<div class="game-animation">
+  <img src="coinku.gif" alt="Koin Game">
+</div>
+
+
+
+
+<div class="popup-jari" id="popupJari">
+  <div class="popup-content">
+    <button class="close-btn" onclick="tutupPopupJari()">X</button>
+    <p><strong>Ayoooo kunjungi website portofolio saya! </strong>👉</p>
+  </div>
+</div>
+
+<script>
+  let counterPopup = 0;
+let maxPopup = 3;
+
+function tampilkanPopupJari() {
+  if (counterPopup < maxPopup) {
+    const popup = document.getElementById('popupJari');
+    popup.classList.add('show');  // Tampilkan popup
+  }
+}
+
+function tutupPopupJari() {
+  const popup = document.getElementById('popupJari');
+  popup.classList.remove('show');  // Sembunyikan popup setelah ditutup
+  
+  // Meningkatkan hitungan setelah popup ditutup
+  if (counterPopup < maxPopup) {
+    setTimeout(function() {
+      tampilkanPopupJari();
+      counterPopup++;
+    }, 2000);  // Menunggu 2 detik sebelum menampilkan popup berikutnya
+  }
+}
+
+window.addEventListener('load', function() {
+  setTimeout(tampilkanPopupJari, 2000);  // Menampilkan popup setelah 2 detik
+});
+
+</script>
+
+
+
+
+
+</body>
+</html>

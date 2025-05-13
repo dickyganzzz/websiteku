@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kontak</title>
+  <link rel="stylesheet" href="proyek/kontak.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
+<body style="background: url('gambardiki.jpg') no-repeat center center fixed; background-size: cover; margin: 0; min-height: 100vh;">
+
+  <!-- Header dengan video -->
+  <header class="header">
+    <video autoplay muted loop playsinline>
+      <source src="animasibro.mp4" type="video/mp4" />
+      Browser Anda tidak mendukung video ini.
+    </video>
+    <div class="header-content">
+      <!-- Bisa tambahkan judul di sini jika perlu -->
+    </div>
+  </header>
+
+  <!-- Konten utama -->
+  <main class="main-content">
+
+    <!-- Kontainer Sosial -->
+    <div class="social-container">
+      <div class="social-item">
+        <i class="fab fa-instagram"></i> @dickyganzz
+      </div>
+      <div class="social-item">
+        <i class="fab fa-whatsapp"></i> +62 812-3456-7890
+      </div>
+      <div class="social-item">
+        <i class="fab fa-facebook"></i> Dickyaldianpratama
+      </div>
+      <div class="social-item">
+        <i class="fab fa-youtube"></i> dickyAldiannnnz
+      </div>
+    </div>
+
+    <!-- Bubble efek -->
+    <div class="bubble-container">
+      <span class="bubble" style="left: 10px; animation-delay: 0s; width: 30px; height: 30px;"></span>
+      <span class="bubble" style="left: 40px; animation-delay: 1s; width: 24px; height: 24px;"></span>
+      <span class="bubble" style="left: 20px; animation-delay: 2s; width: 18px; height: 18px;"></span>
+      <span class="bubble" style="left: 60px; animation-delay: 3s; width: 36px; height: 36px;"></span>
+      <span class="bubble" style="left: 30px; animation-delay: 4s; width: 28px; height: 28px;"></span>
+    </div>
+
+    <!-- Tombol menuju beranda -->
+    <a href="diki.html" class="purple-button">  ← KEMBALI</a>
+
+    <!-- Iklan -->
+    <div class="advertisement" id="adBox">
+      <button class="close-btn" onclick="closeAd()">×</button>
+      <img src="sprit.jpg" alt="Iklan" />
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/DickyAldian12" target="_blank" class="social-icon github" title="GitHub"></a>
+      <a href="https://linkedin.com/in/bgdikss" target="_blank" class="social-icon linkedin" title="LinkedIn"></a>
+      <a href="https://twitter.com/Dickyganzz23" target="_blank" class="social-icon twitter" title="Twitter"></a>
+      <a href="https://instagram.com/Dickybrooo" target="_blank" class="social-icon instagram" title="Instagram"></a>
+    </div>
+    <p>© 2025 Dicky Aldian Pratama | All rights reserved.</p>
+  </footer>
+
+  <script>
+    function closeAd() {
+      document.getElementById('adBox').style.display = 'none';
+    }
+  </script>
+
+</body>
+</html>

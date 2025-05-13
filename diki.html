@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio | Nama Kamu</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="footer.css">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Header -->
+  <header class="bg-white shadow-lg sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+      
+      <!-- Judul Kiri -->
+      <h1 class="text-2xl font-bold text-gray-800">Dicky Aldian Pratama</h1>
+      
+      <!-- Menu dan Foto Kanan -->
+      <div class="flex items-center space-x-6">
+        <!-- Navigasi Menu -->
+        <nav class="space-x-6 hidden md:flex">
+          <a href="tentang.html" class="text-gray-600 hover:text-blue-600 transition">Tentang</a>
+          <a href="skill.html" class="text-gray-600 hover:text-blue-600 transition">Skill</a>
+          <a href="kontak.html" class="text-gray-600 hover:text-blue-600 transition">Kontak</a>
+          <a href="ulasan.html" class="text-gray-600 hover:text-blue-600 transition">Ulasan</a>
+        </nav>
+  
+        <!-- Gambar Profil -->
+        <img src="diki.jpg" alt="orangganteng" class="w-16 h-16 rounded-full border-2 border-indigo-600">
+      </div>
+    </div>
+  </header>
+  
+  
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-extrabold mb-4">Halo, saya <span class="text-yellow-300">Dicky Aldian Pratama</span></h2>
+      <p class="text-lg">Saya seorang <span class="font-semibold">Web Developer</span> yang suka membuat tampilan keren dan interaktif.</p>
+      <a href="#projects" class="mt-6 inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-blue-100 transition">Lihat Proyek Saya</a>
+    </div>
+  </section>
+
+  <!-- Projects Section (Scroll Target) -->
+  <section id="projects" class="py-20 bg-white">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-3xl font-bold text-gray-800 mb-6">Proyek Saya</h3>
+      <p class="text-gray-600 mb-10">Berikut beberapa proyek yang pernah saya kerjakan.</p>
+      
+      <!-- Tambahkan daftar proyek di sini -->
+      <div class="grid md:grid-cols-2 gap-6">
+        <a href="proyek1.html" class="p-6 border rounded-lg shadow hover:shadow-lg transition block text-left hover:bg-gray-50">
+            <h4 class="text-xl font-semibold mb-2">Proyek 1</h4>
+            <p class="text-gray-600">Deskripsi singkat tentang proyek pertama. Klik untuk melihat detail.</p>
+          </a>
+
+
+        
+          <!-- Proyek 2 dengan link -->
+        <a href="proyek2.html" class="p-6 border rounded-lg shadow hover:shadow-lg transition   block text-left hover:bg-gray-50">
+        <h4 class="text-xl font-semibold mb-2">Proyek 2</h4>
+        <p class="text-gray-600">Deskripsi singkat tentang proyek kedua. Klik untuk melihat detail.</p>
+        </a>
+  
+        
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Skills Section (Scroll Target) --><!-- Footer -->
+    <footer class="footer" style="position: relative; padding: 20px; background-color: #262424; color: white;">
+        <p>© 2025 Dicky Aldian Pratama</p>
+        <p>
+          <a href="https://github.com/DickyAldian12" target="_blank" style="color: #93c5fd;">GitHub</a> |
+          <a href="https://linkedin.com/in/Dickyganzz" target="_blank" style="color: #93c5fd;">LinkedIn</a>
+        </p>
+      
+        <!-- Teks Dicky Aldian Pratama dengan posisi absolute -->
+       <p style="position: absolute; bottom: 10px; right: 20px; font-size: 14px; display: flex; align-items: center;">
+      <img 
+        src="diki.jpg" 
+        alt="Dicky Aldian Pratama" 
+        style="
+          width: 50px; 
+          height: 50px; 
+          border-radius: 50%; 
+          object-fit: cover; 
+          object-position: top; /* Fokuskan bagian atas (rambut) */
+          margin-right: 8px;
+        "
+      />
+      Dicky Aldian Pratama
+    </p>
+
+
+
+          <p style="position: absolute; bottom: 10px; left: 20px; font-size: 14px; display: flex; align-items: center;">
+            <a href="https://github.com/DickyAldian12" target="_blank" class="social-icon github"></a>
+            <a href="https://linkedin.com/in/bgdikss" target="_blank" class="social-icon linkedin"></a>
+            <a href="https://twitter.com/Dickyganzz23" target="_blank" class="social-icon twitter"></a>
+            <a href="https://instagram.com/Dickybrooo" target="_blank" class="social-icon instagram"></a>
+          </p>
+          
+      </footer>
+      
+  
+
+
+</body>
+</html>
+
